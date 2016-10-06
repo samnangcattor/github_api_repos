@@ -1,6 +1,6 @@
 <%= form_tag tools_path, method: :post do %>
   <div class="form-group">
-    <%= text_field_tag "user_name", nil, class: "form-control" %>
+    <%= text_field_tag "user_name", nil, class: "form-control", required: true %>
   </div>
   <div class="form-group">
     <%= submit_tag "Submit", class: "btn btn-success" %>
