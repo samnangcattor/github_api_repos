@@ -1,0 +1,11 @@
+<div class="container text-center">
+  <div class="panel panel-success">
+    <div class="panel-heading">Panel with panel-default class</div>
+    <div class="panel-body">
+      <%= render "form_add" %>
+    </div>
+  </div>
+</div>
+<% if @repositories.present? %>
+  <%= render "result" %>
+<% end %>

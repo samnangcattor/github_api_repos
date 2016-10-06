@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th>Repository</th>
+          <th>Link Repos</th>
+        </tr>
+      </tbody>
+      <tbody>
+        <% @repositories.each do |repository| %>
+          <tr>
+            <th><%= repository[:repos] %></th>
+            <th><%= link_to repository[:html_url], repository[:html_url] %></th>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
